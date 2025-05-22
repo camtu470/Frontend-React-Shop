@@ -16,3 +16,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans);
 }
+
+.cut-corner-br {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
