@@ -1,4 +1,5 @@
 import { GiFireDash } from "react-icons/gi";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { FaRegHeart, FaEthereum, FaLongArrowAltRight } from "react-icons/fa";
 
 const mockTrendingNFTs = [
@@ -43,10 +44,20 @@ const mockTrendingNFTs = [
 const TopTrending = () => {
   return (
     <div className="px-4 flex flex-col gap-6">
-      <div className="flex gap-2 items-center justify-center">
-        <h1 className="text-5xl font-extrabold font-geistMono">TOP TRENDING</h1>
-        <GiFireDash className="text-black text-5xl" />
+      <div className="flex justify-between items-center">
+        {" "}
+        <div className="flex gap-2 items-center">
+          <h1 className="text-5xl font-extrabold font-geistMono">
+            TOP TRENDING
+          </h1>
+          <GiFireDash className="text-black text-5xl" />
+        </div>
+        <div className="flex gap-2 items-center text-4xl">
+          <IoIosArrowDropleft />
+          <IoIosArrowDropright />
+        </div>
       </div>
+
       <div className="flex gap-4 ">
         {mockTrendingNFTs.map((nft) => (
           <div
