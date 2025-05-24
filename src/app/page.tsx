@@ -12,7 +12,7 @@ import Footer from "@/components/ui/footer";
 import ListProduct from "@/components/home-page/list-product";
 import News from "@/components/other/news-card";
 import Technology from "@/components/other/technology";
-
+import Feedback from "@/components/other/feedback";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -26,6 +26,7 @@ export default function Home() {
         <News />
         <Season />
         <Technology />
+        <Feedback />
         <TopTrending />
       </main>
       <Footer />
