@@ -11,6 +11,7 @@ import TopTrending from "@/components/home-page/top-trending";
 import Footer from "@/components/ui/footer";
 import ListProduct from "@/components/home-page/list-product";
 import News from "@/components/other/news-card";
+import Technology from "@/components/other/technology";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
         <TopRate />
         <Carousel />
         <Team />
-        <News/>
+        <News />
         <Season />
+        <Technology />
         <TopTrending />
       </main>
       <Footer />
