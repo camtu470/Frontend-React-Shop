@@ -4,7 +4,6 @@ import Navbar from "@/components/ui/navbar";
 import Banner from "@/components/home-page/banner";
 import Introduce from "@/components/home-page/introduce";
 import Season from "@/components/home-page/season";
-import Carousel from "@/components/home-page/carousel";
 import Team from "@/components/home-page/team";
 import TopRate from "@/components/home-page/top-rate";
 import TopTrending from "@/components/home-page/top-trending";
@@ -13,6 +12,7 @@ import ListProduct from "@/components/home-page/list-product";
 import News from "@/components/other/news-card";
 import Technology from "@/components/other/technology";
 import Feedback from "@/components/other/feedback";
+import Carousel_slider from "@/components/home-page/carousel";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -21,7 +21,7 @@ export default function Home() {
         <ListProduct />
         <Introduce />
         <TopRate />
-        <Carousel />
+        <Carousel_slider />
         <Team />
         <News />
         <Season />
