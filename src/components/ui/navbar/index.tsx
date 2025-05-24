@@ -149,21 +149,41 @@ const Navbar = () => {
     return (
       <div
         className={cn(
-          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50",
+          "fixed top-10 inset-x-0 w-11/12 flex justify-between items-center mx-auto z-50 rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input px-8 py-6",
           className
         )}
       >
+        <div>
+          <p className="text-black">logo</p>
+        </div>
         <Menu setActive={setActive}>
-          <MenuItem setActive={setActive} active={active} item="Services">
+          <MenuItem setActive={setActive} active={active} item="Home">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/web-dev">Web Development</HoveredLink>
-              <HoveredLink href="/interface-design">
-                Interface Design
-              </HoveredLink>
-              <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/branding">Branding</HoveredLink>
+              <HoveredLink href="/">Home 1</HoveredLink>
+              <HoveredLink href="/home2">Home 2</HoveredLink>
             </div>
           </MenuItem>
+          <HoveredLink href="/about">About Us</HoveredLink>
+          <MenuItem setActive={setActive} active={active} item="Pages">
+            <div className="flex flex-col space-y-4 text-sm">
+              <HoveredLink href="/shop">Shop</HoveredLink>
+              <HoveredLink href="/shop/products">All product</HoveredLink>
+              <HoveredLink href="/shop/product/1">Product Detail</HoveredLink>
+              <HoveredLink href="/others/services">All Services</HoveredLink>
+              <HoveredLink href="/others/service/1">Service Detail</HoveredLink>
+              <HoveredLink href="/shop/cart">Cart</HoveredLink>
+              <HoveredLink href="/shop/checkout">Checkout</HoveredLink>
+            </div>
+          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="News">
+            <div className="flex flex-col space-y-4 text-sm">
+              <HoveredLink href="/others/news">Our Blog</HoveredLink>
+              <HoveredLink href="/others/news/sample-news">
+                Blog Details
+              </HoveredLink>
+            </div>
+          </MenuItem>
+          <HoveredLink href="/contact">Contact</HoveredLink>
           <MenuItem setActive={setActive} active={active} item="Products">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
@@ -191,16 +211,11 @@ const Navbar = () => {
                 description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
               />
             </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Pricing">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/hobby">Hobby</HoveredLink>
-              <HoveredLink href="/individual">Individual</HoveredLink>
-              <HoveredLink href="/team">Team</HoveredLink>
-              <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-            </div>
-          </MenuItem>
+          </MenuItem>{" "}
         </Menu>
+        <div>
+          <p className="text-black">jhcsbjh</p>
+        </div>
       </div>
     );
   }

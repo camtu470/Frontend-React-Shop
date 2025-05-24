@@ -17,7 +17,10 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <main className="flex flex-col gap-10">
-        <Banner />
+        <div className="mt-6">
+          <Banner />
+        </div>
+
         <ListProduct />
         <Introduce />
         <TopRate />
